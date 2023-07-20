@@ -27,6 +27,7 @@ h1, h2 {
         padding: 17px 62px;
         height: 69px;
         list-style: none;
+
         >.logo__content {
             display: flex;
             align-items: center;
@@ -215,6 +216,50 @@ header {
     }
 }
 
+/* footer */
+
+footer {
+    height: 314px;
+    background: #EB4A7B;
+    padding-top: 84px;
+    padding-left: 97px;
+
+    >.footer__list {
+        display: none;
+    }
+
+    >.footer__list__links {
+        display: flex;
+        list-style: none;
+        gap: 70px;
+
+        >.footer__section {
+            >.footer__title {
+                color: #FFF;
+                font-family: Roboto Serif;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 34px;
+            }
+
+            >.footer__links {
+                list-style: none;
+                color: #FFF;
+                font-family: Roboto;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    }
+}
+
 
 /* media query 750px */
 @media (max-width: 750px) {
@@ -236,11 +281,11 @@ header {
 
             >.menu__content {
                 >.menu__list {
-                    >.link__instagram, .link__youtube {
+                    >:nth-child(1), >:nth-child(2) {
                         display: none;
                     }
 
-                    >.link__whatsapp {
+                    >:nth-child(3) {
                         width: 71px;
                         height: 71px;
 
@@ -342,4 +387,102 @@ header {
         }
     }
 
+    /* footer */
+
+    footer {
+        height: auto;
+        background: #EB4A7B;
+        padding: 56px 0 144px;
+        padding-left: 0;
+
+        >.footer__list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            list-style: none;
+            gap: 52.45px;
+            margin-bottom: 68.69px;
+
+            >.logo__content {
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.32px;
+                color: #FFFFFF;
+                opacity: 1;
+                font-size: 42px;
+                font-weight: bold;
+
+                >span {
+                    font-family: 'Roboto Serif', serif;
+                }
+
+                >.logo__img {
+                    width: 93.55px;
+                    height: 93.55px;
+                    margin-right: 5.98px;
+
+                    >img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            >.menu__content {
+                >.menu__list {
+                    display: flex;
+                    align-items: center;
+                    gap: 35.6px;
+                    list-style: none;
+
+                    >:nth-child(1) figure {
+                        height: 45.4px;
+
+                        >img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    >:nth-child(2) figure {
+                        height: 40.61px;
+
+                        >img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    >:nth-child(3) figure {
+                        height: 45.04px;
+
+                        >img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        >.footer__list__links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            >.footer__section {
+                >.footer__title {
+                    text-align: center;
+                    font-size: 33px;
+                }
+
+                >.footer__links {
+                    align-items: center;
+                    font-size: 32px;
+                    gap: 12px;
+                }
+            }
+        }
+    }
 }
