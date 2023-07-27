@@ -9,7 +9,7 @@ This is a simple project that demonstrates a basic webpage created using HTML an
 
 | Desktop | 
 |----------|
-| <img src="https://raw.githubusercontent.com/devartes/Vai-na-Web-Desafio-Final-01/main/assets/img/Desafio-Final.png?token=GHSAT0AAAAAAB3EJYRJNUQLC5SZ27SMUBT6ZF2QPLA" alt="preview site" width="300px" height="100%">
+| <img src="https://raw.githubusercontent.com/devartes/Vai-na-Web-Desafio-Final-01/main/assets/img/Desafio-Final.png" alt="preview site" width="300px" height="100%">
 </div>
 
 ## Technologies Used
